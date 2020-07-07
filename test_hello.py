@@ -1,6 +1,6 @@
 from hello import toyou, add, subtract
 def setup_function(function):
-  print("Running Setup: %s" % function._name_")
+  print("Running Setup: %s" % function._name_"")
   function.x = 10
 def teardown_function(function):
   print("Running Teardown: %s" % function._name_)

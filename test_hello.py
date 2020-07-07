@@ -1,9 +1,9 @@
 from hello import toyou, add, subtract
 def setup_function(function):
-  print("Running setup: %s" % function.'_name_')
+  print("Running setup: %s" % function.__name__)
   function.x = 10
 def teardown_function(function):
-  print("Running Teardown: %s" % function._name_)
+  print("Running Teardown: %s" % function.__name__)
   del function.x
 #### Run to see failed test
 #def test_hello_add():

@@ -7,6 +7,6 @@ test:
 	#python -m pytest -vv --cov=myrepolib tests/*.py
 	#python -m pytest --nbval notebook.ipynb
 lint:
-	docker run --rm -i hadolint/hadolint < Dockerfile 
+	docker run Dockerfile 
 	pylint --disable=R,C,W1203 app.py
 all: install lint test
